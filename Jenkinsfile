@@ -23,8 +23,7 @@ pipeline {
             steps {
                 sh """
                     echo " profession is software engineering"
-                    lsblk
-                    top
+                    lsblk                  
                 """
             }
         }
