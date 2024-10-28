@@ -26,7 +26,8 @@ pipeline {
             steps {
                 sh """
                     echo " profession is software engineering"
-                    lsblk                  
+                    lsblk   
+                    sleep 10               
                 """
             }
         }
