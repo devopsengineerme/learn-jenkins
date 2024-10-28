@@ -38,7 +38,8 @@ pipeline {
             steps {
                 sh """
                     echo " profession is software engineering"
-                    lsblk                                   
+                    lsblk   
+                    sleep 10                                
                 """
             }
         }
@@ -59,7 +60,7 @@ pipeline {
     // post build
     post {
         always {
-            echo " welcome to jenkins"
+            echo " welcome to jenkins webhook"
         }
         failure {
             echo " this message comes after failure"
