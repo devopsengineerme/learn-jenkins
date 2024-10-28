@@ -19,14 +19,14 @@ pipeline {
             }
         }
     }
-    // post build
-    always {
-        echo " welcome to jenkins"
-    }
-    failure {
-        echo " this message comes after failure"
-    }
-    success {
-        echo "this build was successfull"
-    }
+    // // post build
+    // always {
+    //     echo " welcome to jenkins"
+    // }
+    // failure {
+    //     echo " this message comes after failure"
+    // }
+    // success {
+    //     echo "this build was successfull"
+    // }
 }
