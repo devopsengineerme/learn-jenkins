@@ -4,6 +4,9 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    environment {
+        greeting = 'hi goodmorning'
+    }
     //build
     stages {
         stage ('hi') {
@@ -13,12 +16,16 @@ pipeline {
         }
         stage ('name') {
             steps {
-                echo " name is devops"                         
+                echo " name is devops $greeting"                         
             }
         }
         stage ('profession') {
             steps {
-                echo " profession is software engineering"
+                sh """
+                    echo " profession is software engineering"
+                    lsblk
+                    top
+                """
             }
         }
     }
