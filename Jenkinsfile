@@ -8,7 +8,7 @@ pipeline {
         greeting = 'hi goodmorning'
     }
     options {
-        timeout(time: 1, unit:'SECONDS')
+        timeout(time: 1, unit:'HOURS')
         disableconcurrentbuilds()
     }
     //build
@@ -27,8 +27,7 @@ pipeline {
             steps {
                 sh """
                     echo " profession is software engineering"
-                    lsblk   
-                    sleep 10               
+                    lsblk                                   
                 """
             }
         }
