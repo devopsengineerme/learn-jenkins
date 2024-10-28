@@ -8,7 +8,7 @@ pipeline {
         greeting = 'hi goodmorning'
     }
     options {
-        timeout(time: 1 , unit:seconds)
+        timeout(time: 1, unit:'SECONDS')
     }
     //build
     stages {
