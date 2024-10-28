@@ -9,8 +9,7 @@ pipeline {
         }
         stage ('name') {
             steps {
-                echo " name is devops"
-                ls -ltr                
+                echo " name is devops"                         
             }
         }
         stage ('profession') {
